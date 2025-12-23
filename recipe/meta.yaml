@@ -1,4 +1,4 @@
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dreamerr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dreamerr/dreamerr_{{ version }}.tar.gz
-  sha256: 3e5e4afd10623b6dac6bb9b8bf0480d41c7422884cfec2d9d9786414f9026a87
+  sha256: 590b609009bac8d04ad363b0c067806f5c13870aaef2b42aa8764f74e2040178
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
